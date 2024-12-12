@@ -1,0 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;  
+}
+
+.topbanner {
+  background-color:  #51247a;
+  display: flex;
+  height: 100px;
+}
