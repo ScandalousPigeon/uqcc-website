@@ -57,13 +57,15 @@ img, a {
 
 #membership {
   background-color: #131a28;
+  padding: 100px;
   height: 1000px;
 
 }
 
 #contact {
   background-color: white;
-  height: 1000px;
+  padding: 100px;
+  height: 600px;
 }
 
 #footer {
