@@ -45,6 +45,11 @@ img, a {
   background-color:  #131a28;
 }
 
+#about {
+  background-color: white;
+  height: 1000px;
+}
+
 #recentevents {
   background-color:  #131a28;
   color: white;
