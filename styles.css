@@ -20,8 +20,17 @@ a img {
   padding: 5px;
 }
 
-.welcomeimage {
+#home {
+  position: relative;
+  height: 100vh;
   width: 100vw;
+  background: url("./images/homepage-background.jpg");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner a {
@@ -40,6 +49,7 @@ a img {
   width: 100vw;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 
 .left {
@@ -56,29 +66,29 @@ a img {
 .right {
   display: flex;
   gap: 5px;
-  padding-right: 30px;
+  padding-right: 10px;
 }
 
 #about {
-  background-color: white;
+  background-color: #131a28;
   height: 1000px;
 }
 
 #events {
-  background-color:  #131a28;
+  background-color:  white;
   color: white;
   height: 1000px;
 }
 
 #membership {
-  background-color: white;
+  background-color: #131a28;
   padding: 100px;
   height: 1000px;
 }
 
 #contact {
-  background-color: #131a28;
-  color: white;
+  background-color: white;
+  color: #131a28;
   padding: 100px;
   height: 600px;
 }
