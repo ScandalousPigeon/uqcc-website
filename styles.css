@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Montserrat, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 html {
@@ -16,6 +17,7 @@ a img {
   height: 50px;
   display: block;
   object-fit: contain;
+  padding: 5px;
 }
 
 .welcomeimage {
@@ -38,17 +40,23 @@ a img {
   width: 100vw;
   justify-content: space-between;
   align-items: center;
-  gap: 32px;
+}
+
+.left {
+  display: flex;
 }
 
 .centre {
   display: flex;
   gap: 20px;
+  position: fixed;
+  left: 40%;
 }
 
 .right {
   display: flex;
-  gap: 20px;
+  gap: 5px;
+  padding-right: 30px;
 }
 
 #about {

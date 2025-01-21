@@ -4,12 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <title>UQ Chess Club</title>
 </head>
 <body>
   <div class="banner">
     <div class="left">
-      <a href="#"><img src="./images/logo.png"></a>
+      <a href="#"><img src="./images/logo-no-text.png"></a>
+      <a href="#"><img src="./images/uq-chess-club-text.png"></a>
     </div>
     <div class="centre">
       <a href="#about">About</a>
@@ -18,10 +23,17 @@
       <a href="#contact">Contact</a>
     </div>
     <div class="right">
-
+      <div>
+        <a href="https://www.chess.com/club/the-university-of-queensland-chess-club" target="_blank">
+          <img src="./images/chesscom.png">
+        </a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/UQChessClub/" target="_blank">
+          <img src="./images/Facebook_Logo_Primary.png">
+        </a>
+      </div>
     </div>
-    
-    
   </div>
   <img src="./images/homepage-background.jpg" class="welcomeimage">
   <div id="about"></div>
@@ -33,15 +45,5 @@
     <p>You can also find us on Facebook and Instagram.</p>
   </div>
   <div id="footer">Copyright © 2024 University of Queensland Chess Club</div>
-  <script>
-    window.addEventListener('scroll', function() {
-      const banner = document.querySelector('.banner');
-      if (window.scrollY > 50) {
-        banner.classList.add('scrolled');
-      } else {
-        banner.classList.remove('scrolled');
-      }
-    });
-  </script>
 </body>
 </html>
