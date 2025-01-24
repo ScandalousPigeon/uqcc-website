@@ -295,6 +295,8 @@ ul li:nth-child(3) a:before {
 
 #contact {
   background-color: white;
+  display: flex;
+  justify-content: center;
   color: #131a28;
   padding: 100px;
   height: 600px;
