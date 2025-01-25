@@ -56,7 +56,7 @@ p {
   display: flex;
   gap: 30px;
   position: fixed;
-  left: 40%;
+  left: 38%;
 }
 
 .centre a {
@@ -207,9 +207,9 @@ ul li:nth-child(3) a:before {
 }
 
 #about {
-  background-color: #131a28;
+  background-color: white;
   padding: 100px;
-  color: white;
+  color: #131a28;
   height: 100vh;
   text-align: center;
 }
