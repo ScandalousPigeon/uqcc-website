@@ -34,6 +34,7 @@ html {
   font-size: 18px;
   display: flex;
   align-items: center;
+  padding: 7.5px;
 }
 
 .left {
@@ -58,7 +59,7 @@ html {
 .nav-links {
   display: flex;
   position: fixed;
-  left: 41%;
+  left: 39%;
   gap: 30px;
 }
 
@@ -123,19 +124,25 @@ html {
   padding: 100px;
   color: #131a28;
   text-align: center;
-  min-height: 100vh; /* or use 100vh if you prefer full-viewport sections */
 }
 
 #about {
+  min-height: 60px;
   text-align: center;
   line-height: 1.6;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 #about img {
   object-fit: cover;
   width: 50vw;
-  height: 80vh;
+  height: 50vh;
+}
+#about p {
+  max-width: 50vw;
+  text-align: justify;
 }
 
 /* Constitution Button */
@@ -155,11 +162,29 @@ html {
   transform: translateY(-2px);
 }
 
+.map {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
 /* ========== FOOTER ========== */
 #footer {
   background-color: #131a28;
   color: white;
-  padding: 20px;
+  padding: 9px;
   display: flex;
   justify-content: center;
 }
@@ -178,6 +203,9 @@ html {
 }
 .social-links li {
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .social-links li a {
   width: 40px;
@@ -191,11 +219,22 @@ html {
   overflow: hidden;
   /* Add your icon styling or transitions here if desired */
 }
+.social-links li a svg {
+  transition: transform 0.3s ease, fill 0.3s ease;
+  fill: black;
+}
+
+.social-links li a:hover svg {
+  fill: #733099;
+}
+
 
 /* ========== RESPONSIVE MEDIA QUERIES ========== */
 @media (max-width: 768px) {
+  
   .banner {
     flex-wrap: wrap; /* Let the banner items stack on small screens */
+    flex-direction: column;
     height: auto;
     padding: 10px;
   }
@@ -203,14 +242,31 @@ html {
   .right {
     width: 100%;
     justify-content: center;
+    display: flex;
     margin-bottom: 10px;
   }
   .nav-links {
     width: 100%;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    position: relative;
+    left: auto;
+    gap: 10px;
     flex-wrap: wrap;
   }
+
+  #about, #events, #contact {
+    padding: 40px;
+  }
+
+  #about img {
+    width: 90vw !important;
+  }
+
+  #about p {
+    max-width: 100vw !important;
+  }
+  
   #footer .footer-content {
     flex-direction: column;
     gap: 10px;
@@ -218,5 +274,8 @@ html {
   }
   #footer p {
     margin-bottom: 10px;
+  }
+  .logo-text-large {
+    display: none;
   }
 }
