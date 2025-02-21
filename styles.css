@@ -220,6 +220,9 @@ html {
     height: auto;
     padding: 10px;
   }
+  .banner.hide-banner {
+    transform: translateY(-100%); /* slide banner up out of view */
+  }
   .left,
   .right {
     width: 100%;
