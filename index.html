@@ -130,9 +130,7 @@
       let lastScrollTop = 0;
   
       window.addEventListener("scroll", function() {
-        // Optional: only run if screen width is <= 768px
         if (window.innerWidth > 768) {
-          // Ensure the banner is always visible on larger screens
           banner.classList.remove("hide-banner");
           return;
         }
@@ -140,14 +138,11 @@
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
   
         if (currentScroll > lastScrollTop) {
-          // User is scrolling DOWN
           banner.classList.add("hide-banner");
         } else {
-          // User is scrolling UP (or scrolled to top)
           banner.classList.remove("hide-banner");
         }
   
-        // Update lastScrollTop (don't go below 0)
         lastScrollTop = Math.max(currentScroll, 0);
       });
     });

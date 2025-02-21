@@ -26,6 +26,7 @@ html {
   padding: 0 20px;               /* Add horizontal padding */
   z-index: 1000;
   box-sizing: border-box;
+  transition: transform 0.3s ease;
 }
 
 .banner a {
