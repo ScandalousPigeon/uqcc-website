@@ -26,7 +26,6 @@ html {
   padding: 0 20px;               /* Add horizontal padding */
   z-index: 1000;
   box-sizing: border-box;
-  transition: transform 0.3s ease;
 }
 
 .banner a {
@@ -220,6 +219,7 @@ html {
     flex-direction: column;
     height: auto;
     padding: 10px;
+    transition: transform 0.3s ease;
   }
   .banner.hide-banner {
     transform: translateY(-100%); /* slide banner up out of view */
